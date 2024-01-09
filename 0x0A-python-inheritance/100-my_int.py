@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-
-"""MyInt class that inherits from int"""
+"""Defines a class MyInt that inherits from int."""
 
 
 class MyInt(int):
-    """MyInt class with != and == interchanged"""
+    """Invert int operators == and !=."""
+
     def __eq__(self, value):
         """Override == opeartor with != behavior."""
         return self.real != value
