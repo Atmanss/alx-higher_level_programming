@@ -12,8 +12,8 @@ Base = declarative_base()
 class State(Base):
     """
     State class
-        id -> state.id
-        name -> state.name
+        id -> state id
+        name -> state name
     """
     __tablename__ = 'states'
     id = Column(Integer, primary_key=True,

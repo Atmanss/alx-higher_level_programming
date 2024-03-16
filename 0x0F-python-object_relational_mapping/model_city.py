@@ -9,22 +9,22 @@ from unicodedata import name
 from sqlalchemy import Column, ForeignKey, Integer, String, null
 from sqlalchemy.ext.declarative import declarative_base
 
-Base = declarative_base()
+The_Base = declarative_base()
 
 
-class City(Base):
+class City(The_Base):
     """
     inherits from Base (imported from model_state)
-    links to the MySQL table cities
+    links to the MySQL table cities.
 
     class attribute id that represents a column of
-    an auto-generated, unique integer, can't be null and is a primary key
+    an auto-generated, unique integer, can't be null and is a primary key.
 
     class attribute name that represents a column
-    of a string of 128 characters and can't be null
+    of a string of 128 characters and can't be null.
 
     class attribute state_id that represents a column
-    of an integer, can't be null and is a foreign key to states.id
+    of an integer, can't be null and is a foreign key to states.id.
 
     """
     __tablename__ = "cities"
