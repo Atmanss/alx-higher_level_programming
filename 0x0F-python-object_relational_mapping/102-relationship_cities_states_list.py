@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""List all states Of the USA"""
+"""List all states"""
 from sys import argv
 from relationship_state import Base, State
 from relationship_city import City
